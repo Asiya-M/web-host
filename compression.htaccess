@@ -1,0 +1,6 @@
+# .htaccess file
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js\.unityweb|wasm\.unityweb)$">
+        Header set Content-Encoding gzip
+    </FilesMatch>
+</IfModule>
